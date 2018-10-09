@@ -6,8 +6,14 @@ namespace EPI2018.Solutions
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("HELLO WORLD!");
+        {   
+            SynchronizedInterleavingThreadsTest();
+                     
+            Console.WriteLine("DONE!");
+        }
+
+        private static void SynchronizedInterleavingThreadsTest(){
+            SynchronizedInterleavingThreadsSolution.PrintNumbers();
         }
     }
 }
