@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EPI2018.Solutions
+﻿namespace EPI2018.Solutions
 {
     public static class PowerXYSolution
     {

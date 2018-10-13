@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Drawing;
 using EPI2018.Solutions;
 using Xunit;
 

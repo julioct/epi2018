@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace EPI2018.Solutions
+﻿namespace EPI2018.Solutions
 {
     public static class SearchFirstKeySolution
     {
