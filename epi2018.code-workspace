@@ -8,6 +8,8 @@
 		},
 	],
 	"settings": {
+		"omnisharp.autoStart": false,
+
 		"dotnet-test-explorer.testProjectPath": "../**/*Tests.csproj"
 	}
 }
