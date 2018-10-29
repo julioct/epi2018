@@ -8,16 +8,10 @@ namespace EPI2018.Tests
         [Fact]
         public void TreeIsABst()
         {
-            var root = new TreeNode<int>(19);
-            root.Left = new TreeNode<int>(7);
-            root.Right = new TreeNode<int>(43);
-            root.Left.Left = new TreeNode<int>(3);
-            root.Left.Right = new TreeNode<int>(11);
-            root.Right.Left = new TreeNode<int>(23);
-            root.Right.Right = new TreeNode<int>(47);
+            var tree = Utilities.BuildBst();
 
             var expected = true;
-            var actual = IsTreeABstSolution.IsTreeABst(root);
+            var actual = IsTreeABstSolution.IsTreeABst(tree);
             Assert.Equal(expected, actual);
         }
 
