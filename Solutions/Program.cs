@@ -6,13 +6,18 @@ namespace EPI2018.Solutions
     {
         static void Main(string[] args)
         {   
-            SynchronizedInterleavingThreadsTest();
+            //SynchronizedInterleavingThreadsTest();
+            //ReadersWritersSolutionTest();
                      
             Console.WriteLine("DONE!");
         }
 
         private static void SynchronizedInterleavingThreadsTest(){
             SynchronizedInterleavingThreadsSolution.PrintNumbers();
+        }
+
+        private static void ReadersWritersSolutionTest(){
+            ReadersWritersSolution.Start();
         }
     }
 }
