@@ -82,7 +82,7 @@ namespace EPI2018.Solutions
                                     Console.WriteLine("Writer waiting...");
                                     ReaderWriter.WaitLR();
                                 }
-                            } catch (ThreadInterruptedException e) {
+                            } catch (ThreadInterruptedException) {
                                 Console.WriteLine("ThreadInterruptedException in Writer wait");
                             }                            
                         }
