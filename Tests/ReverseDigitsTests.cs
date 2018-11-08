@@ -12,7 +12,7 @@ namespace EPI2018.Tests
             var number = 42;
             
             var expected = 24;
-            var actual = ReverseDigitsSolution.ReverseDigits(number);
+            var actual = ReverseDigitsSolution.Reverse(number);
 
             Assert.Equal(expected, actual);
         }
@@ -23,7 +23,7 @@ namespace EPI2018.Tests
             var number = -314;
             
             var expected = -413;
-            var actual = ReverseDigitsSolution.ReverseDigits(number);
+            var actual = ReverseDigitsSolution.Reverse(number);
 
             Assert.Equal(expected, actual);
         }        
@@ -34,7 +34,7 @@ namespace EPI2018.Tests
             var number = int.MaxValue; //2147483647
             
             var expected = 7463847412;
-            var actual = ReverseDigitsSolution.ReverseDigits(number);
+            var actual = ReverseDigitsSolution.Reverse(number);
 
             Assert.Equal(expected, actual);
         }        
