@@ -7,7 +7,7 @@ namespace EPI2018.Tests
     public class BuyAndSellStockTests
     {
         [Fact]
-        public void CircularQueueBasicTest()
+        public void CanComputeMaxProfit()
         {
             double[] prices = {350,315,275,295,260,270,290,230,255,250};
 
