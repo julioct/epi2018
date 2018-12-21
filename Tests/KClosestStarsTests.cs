@@ -21,9 +21,9 @@ namespace EPI2018.Tests
             var k = 3;
 
             var expected = new List<KClosestStarsSolution.Star>();
-            expected.Add(stars[0]);
-            expected.Add(stars[4]);
             expected.Add(stars[2]);
+            expected.Add(stars[4]);
+            expected.Add(stars[0]);
 
             var actual = KClosestStarsSolution.FindClosestKStars(k, stars);
 

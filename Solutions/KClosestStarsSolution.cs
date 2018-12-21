@@ -7,15 +7,15 @@ namespace EPI2018.Solutions
     public static class KClosestStarsSolution
     {        
         public static List<Star> FindClosestKStars(int k, IEnumerable<Star> stars){
-            // Should use a Priority Queue but it's not available in .NET
-            var maxHeap = new SortedSet<Star>();
+            var comparer = Comparer<Star>.Create((a, b) => a.CompareTo(b));
+            var maxHeap = new PriorityQueue<Star>(comparer);
 
             foreach (var star in stars)
             {
-                maxHeap.Add(star);
+                maxHeap.Enqueue(star);
 
                 if (maxHeap.Count > k){
-                    maxHeap.Remove(maxHeap.Max);
+                    maxHeap.Dequeue();
                 }
             }
 
